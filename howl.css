@@ -1,0 +1,301 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+    scroll-behavior:smooth ;
+}
+body{
+
+    background:hsl(7, 46%, 21%);
+    color: #fff;
+}
+.content{ 
+    width: 100%;
+    height: 100vh;
+    background-image : url(img/howlmovingcastle.png);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 8%;
+    position: relative;
+}
+ /* Adjust layout for smaller screens */
+ @media screen and (max-width: 600px) {
+    .content {
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+
+    }
+}
+.shade{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65%;
+    height: 100%;
+    background: linear-gradient(90deg, hsla(7, 46%, 21%, .98) 10%, hsla(7, 46%, 21%, .98) 20%, hsla(7, 46%, 21%, .97) 25%, hsla(7, 46%, 21%, .95) 35%, hsla(7, 46%, 21%, .94) 40%, hsla(7, 46%, 21%, .92) 45%, hsla(7, 46%, 21%, .9) 50%, hsla(7, 46%, 21%, .87) 55%, hsla(7, 46%, 21%, .82) 60%, hsla(7, 46%, 21%, .75) 65%, hsla(7, 46%, 21%, .63) 70%, hsla(7, 46%, 21%, .45) 75%, hsla(7, 46%, 21%, .27) 80%, hsla(7, 46%, 21%, .15) 85%, hsla(7, 46%, 21%, .08) 90%, hsla(7, 46%, 21%, .03) 95%, hsla(7, 46%, 21%, 0));
+}
+.shade2{
+    background: linear-gradient(0deg, hsla(7, 46%, 21%, 0) 0, hsla(7, 46%, 21%, .987) 1.62%, hsla(7, 46%, 21%, .951) 3.1%, hsla(7, 46%, 21%, .896) 4.5%, hsla(7, 46%, 21%, .825) 5.8%, hsla(7, 46%, 21%, .741) 7.06%, hsla(7, 46%, 21%, .648) 8.24%, hsla(7, 46%, 21%, .55) 9.42%, hsla(7, 46%, 21%, .45) 10.58%, hsla(7, 46%, 21%, .352) 11.76%, hsla(7, 46%, 21%, .259) 12.94%, hsla(7, 46%, 21%, .175) 14.2%, hsla(7, 46%, 21%, .104) 15.5%, hsla(7, 46%, 21%, .049) 16.9%, hsla(7, 46%, 21%, .013) 18.38%, hsla(7, 46%, 21%, 0) 20%);
+
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.header{
+    background: #000000;
+    padding: 0px 0;
+    display: flex;
+    margin-top:0 ;
+    margin-left: 0;
+    margin-right:  0px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+ }
+ .header .hleft{
+cursor: pointer;
+}
+.header .hcenter span{
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.hcenter span:hover{
+    background-color: #181818;
+}
+.hright{
+ margin-right: 40px;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
+.hright button{
+    background-color: #281fa3e8;
+    border: none;
+    padding: 9px 20px;
+ text-align: center;
+ font-size: 15px;
+ font-weight: 900px;
+ width: auto;
+ color: #fff;
+ border-radius: 5px;
+ 
+ cursor: pointer;
+}
+.logo{
+ padding: 10px 10px;
+ position: absolute;
+ margin-top: 15px;
+ margin-left: -40px;
+
+}
+.center {
+    padding: 250px 0;
+    position: absolute;
+    margin-left: -40px;  
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.center h1{
+    font-size: 26px;
+    font-weight: 500px;
+    line-height: 40px;
+
+}
+.center p span{
+   color: #a3a3a3;
+   line-height: 50px;
+}
+.footer {
+    align-items: center;
+    background-image: linear-gradient(90deg, #333 5%, #181818 95%);
+    display: flex;
+    padding: 2em;
+    padding: 8px 20px;
+    margin-top: 520px; /* This margin seems excessive and could cause layout issues */
+    z-index: 2;
+    position: relative;
+    justify-content: space-between; /* Add this line */
+}
+.footer .fright button {
+    background-color: #281fa3e8;
+    color: #ffffff;
+    border: none;
+    padding: 9px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    /* margin-left: 700px; */ /* Remove this line */
+}
+.footer .fleft {    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    flex: auto;}
+ 
+    .gallery{
+        width: 100%;
+        padding: 30px 0;
+        align-items: center;
+        text-align: center;
+         
+        }
+     .gallery p{
+        line-height: 30px;
+        margin-bottom: 10px;
+      }
+     .img{
+        width: 370px;
+        height: 170px;
+        display: inline-block;
+        padding: 0px 0px;
+        box-sizing: border-box;
+        margin: 1px 3px;
+        background-position: center;
+        background-size: cover;
+        transition: 0.5s;
+      }
+      .img:hover{
+        transform: translateY(-5px);
+      }
+    table{
+        margin: 0 auto;
+     }
+    .img1{
+        background-image: url(img/howlimg1.jpg);
+    }
+    .img2{
+        background-image: url(img/howlimg2.jpg);
+    }
+    .img3{
+        background-image: url(img/howlgif.gif);
+     }
+    .img4{
+        background-image: url(img/howlimg4.jpg);
+    }
+    .img5{
+        background-image: url(img/howlimg5.jpg);
+        background-position:top ;
+    }
+    .img6{
+        background-image: url(img/howlimg6.jpg);
+     }
+     .img7{
+        background-image: url(img/howlimg7.gif);
+    }
+    .img8{
+        background-image: url(img/howlimg8.jpg);
+    }
+    .img9{
+        background-image: url(img/howlimg9.jpg);
+        background-position: center;
+    }
+
+.cards{
+    flex-basis: 50%;
+ 
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 0px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 5px 5px;
+    background-position: top;
+    background-size: cover;
+    transition: 0.5s;
+}
+.card1{
+    background-image: url(img/whisperofheartcard.jpg);
+}
+.card2{
+    background-image: url(img/ponyocard.jpg);
+    background-position: bottom;
+}
+.card3{
+    background-image: url(img/howlcard.jpg);
+}
+.card4{
+    background-image: url(img/spiritedawaycard.jpg);
+}
+.card5{
+    background-image: url(img/kikicard.jpg);
+}
+.card6{
+    background-image: url(img/marniecard.jpg);
+}
+.card7{
+    background-image: url(img/totorocard.jpg);
+}
+.card8{
+    background-image: url(img/arrietycard.jpg);
+    background-position: bottom;
+}
+.card9{
+    background-image: url(img/windcard.jpg);
+}
+.card10{
+    background-image: url(img/mononokecard.jpg);
+}
+.card11{
+    background-image: url(img/thecatreturnscard.jpg);
+}
+.card12{
+    background-image: url(img/castleinteskycard.jpg);
+}
+.card13{
+    background-image: url(img/onlyyesterdaycard.jpg);
+}
+.card14{
+    background-image: url(img/porcorossocard.jpg);
+}
+.card15{
+    background-image: url(img/fromuponpoppyhillcard.jpg);
+}
+.card16{
+    background-image: url(img/oceanwavescard.jpg);
+}
+.card:hover{
+    transform: translateY(-10px);
+
+}
+.card h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+}
+ /* Adjust layout for smaller screens */
+ @media screen and (max-width: 600px) {
+    .content {
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+
+    }
+    .center{
+        margin-left: -20px;
+    }
+    .logo{
+        margin-left: -20px;
+    }
+    td{
+        display: block;
+     }
+     .shade{
+        width: 100%;
+        background:#1818188e;
+    }
+}

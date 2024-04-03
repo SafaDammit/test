@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+       <title> Studio Ghibli</title>
+       <link rel="icon" href="img/icon.png">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+       
+    </head>
+    <body>
+        <div class="background">
+        <nav>
+            <a href="index.html">
+            <img src="img/ghibli_logo_white-1.png" class="logo"></a>
+            <div>
+                <button id="signInButton">Sign In</button>
+            </div>
+
+            <div class="overlay" id="overlay">
+                <div class="popup">
+                    <span class="close" onclick=closePopup()>×</span>
+                    <h2>Sign In</h2>
+                    <form class="singin" action="header.html">
+                        <input type="text" placeholder="Username"><br>
+                        <input type="password" placeholder="Password"><br>
+                        <button type="submit" >Sign In</button>
+                    </form>
+                </div>
+            </div> 
+            
+            <script>
+                var overlay = document.getElementById('overlay');
+                var signInButton = document.getElementById('signInButton');
+                
+                signInButton.addEventListener('click', function() {
+                    overlay.style.display = 'flex';
+                });
+                
+                function closePopup() {
+                    overlay.style.display = 'none';
+                }
+            </script>
+
+        </nav>
+        <div class="header-content">
+            <h2>Welcome to the World of Ghibli</h2>
+            <h3>Enter the Magic of Ghibli.</h3>
+            <p>Join Us on an Adventure Beyond Imagination </p>
+            <form class="email-signup" action="header.html">
+                <input type="email" placeholder="Email adress"  >
+                <button type="submit">Get started</button>
+            </form>
+        </div>
+        </div>
+            <div class="row">
+             <table><tr><td>  
+             <div class="Enjoy">
+             <h2>Explore the Ghibli Realm</h2>
+            <p>From Spirited Away to Howl's Moving Castle,  Let the Magic Begin.</p>
+          </div></td><td>
+          <div class="vid1">
+            <a href="header.html">
+                 <video autoplay muted loop src="img/totoro.mp4" width="500"></video>
+               </a></div></td></tr></table>
+         </div>
+    </body>
+</html>
